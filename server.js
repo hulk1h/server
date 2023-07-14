@@ -5,7 +5,7 @@ const mongoose=require('mongoose')
 const fs=require('fs');
 
 mongoose.set("strictQuery",true)
-mongoose.connect("mongodb://127.0.0.1:27017/Project").then(()=>console.log("DBConnected")).catch((err)=>console.log("ERRor"))
+mongoose.connect("mongodb+srv://vignesh:vignesh@cluster0.gyeqw0j.mongodb.net//Project").then(()=>console.log("DBConnected")).catch((err)=>console.log("ERRor"))
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
